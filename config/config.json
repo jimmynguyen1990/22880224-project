@@ -1,29 +1,23 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "eshopDB",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+      "use_env_variable": "POSTGRES_URL",
+      "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "eshopDB",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+      "username": "postgres",
+      "password": "postgres",
+      "database": "eshopDB",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
   },
   "production": {
-    "username": "username",
-    "password": "password",
-    "database": "databasee",
-    "host": "host",
-    "dialect": "postgres",
-    "dialectOptions": {
-      "ssl": {
-        "require": true,
-        "rejectUnauthorized": false
+      "use_env_variable": "POSTGRES_URL",
+      "dialect": "postgres",
+      "dialectOptions": {
+          "ssl": {
+              "require": true,
+              "rejectUnauthorized": false
+          }
       }
-    }
   }
 }
